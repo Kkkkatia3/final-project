@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fjalla+One&family=Lobster&display=swap');
+
+body {
+    background-color: rgba(206, 250, 195, 0.582);
+}
+
+:root {
+  --front-color: black;
+  --back-color: rgba(0, 128, 0, 0.644);
+  --light-back-color:  rgba(209, 240, 209, 0.63);
+}
+
+body {
+  max-width: auto;
+  margin: auto;
+}
+
+html, body, h1, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: 'Lobster', cursive;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.slogan {
+  display: none;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--back-color);
+  min-height: 48px;
+  padding: 0 12px;
+}
+
+.top-row button {
+  background-color: rgba(144, 238, 144, 0.596);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.top-row button a {
+  color: var(--front-color);
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-row .menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.bottom-row a {
+    color: var(--front-color);
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.bottom-row .menu li {
+  border: 1px solid var(--front-color);
+  padding: 12px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.bottom-row .cart {
+    border: 1px solid var(--front-color);
+    padding: 12px;
+    min-width: 50px;
+    text-align: center;
+    background-color: rgb(14, 83, 14);
+}
+
+@media (min-width: 600px) {
+  .slogan {
+    display: block;
+  }
+  
+}
+
+.entrance {
+  display: block;
+  justify-content: space-between;
+  background-color: white;
+  min-height: 48px;
+  margin: 50px 350px;
+}
+
+main h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  margin: 20px;
+}
+
+.entrance p{
+text-align: center;
+font-family: 'Lobster', cursive;
+font-size: 1.6rem;
+}
+

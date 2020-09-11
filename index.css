@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fjalla+One&family=Lobster&display=swap');
+
+body {
+    background-color: rgba(206, 250, 195, 0.582);
+}
+
+:root {
+  --front-color: black;
+  --back-color: rgba(0, 128, 0, 0.644);
+  --light-back-color:  rgba(209, 240, 209, 0.63);
+}
+
+body {
+  max-width: auto;
+  margin: auto;
+}
+
+html, body, h1, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: 'Lobster', cursive;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.slogan {
+  display: none;
+  
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--back-color);
+  min-height: 48px;
+  padding: 0 12px;
+}
+
+.top-row button {
+  background-color: rgba(144, 238, 144, 0.596);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.top-row button a {
+  color: var(--front-color);
+  cursor: pointer;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-row .menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.bottom-row a {
+    color: var(--front-color);
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.bottom-row .menu li {
+  border: 1px solid var(--front-color);
+  padding: 12px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.bottom-row .cart {
+    border: 1px solid var(--front-color);
+    padding: 12px;
+    min-width: 50px;
+    text-align: center;
+    background-color: rgb(14, 83, 14);
+}
+
+@media (min-width: 600px) {
+  .slogan {
+    display: block;
+  }
+  
+}
+
+.news img {
+    display: block;
+    width: 100%;
+}
+
+.image {
+  position: relative;
+    max-width: 100%; /* for IE 6 */
+    margin: 30px 20px;
+}
+
+.product{
+  padding: 10px;
+}
+
+.image p {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .image {
+        display: grid;
+        grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (min-width: 640px) {
+    .newspaper {
+        display: grid;
+        grid-gap: 8px;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (min-width: 960px) {
+    .newspaper {
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+.newspaper {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    min-height: 48px;
+    padding: 0 12px;
+    margin: 20px 20px;
+}
+
+.news {
+    margin: 15px 5px; 
+}
+
+.newspaper{
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.news p a{
+  color: black;
+}
+  
+main h2 {
+    text-align: center;
+}
+
+.footer {
+    display: block;
+    justify-content: space-between;
+    background-color: var(--back-color);
+    min-height: 48px;
+    padding: 0 12px;
+}
+
+.footer p {
+    margin: 10px 10px;
+    font-size: 1.2rem;
+}
+
+footer h4 {
+    font-family: 'Lobster';
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer form {
+      max-width: auto;
+  margin: auto;
+}
+
+footer div {
+      max-width: auto;
+  margin: auto;
+}
+
+.footercloses p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.product {
+  position: relative;
+  width: 100%
+}
+
+.product p{
+  position  : absolute;
+  top   : 100px;
+  left    : 0;
+  width   : 100%;
+}
+
+.product button{
+  position: absolute;
+  top   : 200px;
+  left    : 260px;
+  width   : 20%;
+  border: 1px solid var(--front-color);
+  padding: 12px;
+  min-width: 50px;
+  text-align: center;
+  background-color: rgb(30, 143, 30);
+  font-size: 1.2rem;
+  font-family: "Dansing Script";
+}
+
+.product img {
+  filter: blur(2.5px);
+}
+
+.footer {
+ display: block;
+}
+
+.footer input{
+  margin: 0px 20px;
+}
+
+.footer-contacts-map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+}
+
+.footerclose-map {
+  margin: 10px;
+}
